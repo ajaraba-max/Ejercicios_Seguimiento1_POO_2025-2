@@ -5,7 +5,7 @@ class EjercicioN5:
     def ejecutar():
         try:
             x = int(input("Dale un valor a X: "))
-            y = int(input("Dale un valor a Y: ") )
+            y = int(input("Dale un valor a Y: "))
             suma = 0
 
             print(" SUMA    X      Y")

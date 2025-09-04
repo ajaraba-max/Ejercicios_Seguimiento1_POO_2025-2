@@ -14,7 +14,7 @@ class EjercicioN12:
             print(f"Retención: {retencion}")
             print(f"Sueldo Neto: {salario_neto}")
         except ValueError:
-            print("Por favor, ingrese un número entero válido para las horas trabajadas." )
+            print("Por favor, ingrese un número entero válido para las horas trabajadas.")
 
 if __name__ == "__main__":
     EjercicioN12.ejecutar()

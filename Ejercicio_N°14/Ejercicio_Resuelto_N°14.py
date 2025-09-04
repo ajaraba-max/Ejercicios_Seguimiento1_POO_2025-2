@@ -4,7 +4,7 @@ class EjercicioN14:
     @staticmethod
     def ejecutar():
         try:
-            numero = int(input("Ingresa un número para hallar su Cuadrado y su Cubo: ") )
+            numero = int(input("Ingresa un número para hallar su Cuadrado y su Cubo: "))
             cuadrado, cubo = Matematicas.calcular(numero)
             print(f"Cuadrado: {cuadrado}")
             print(f"Cubo: {cubo}")

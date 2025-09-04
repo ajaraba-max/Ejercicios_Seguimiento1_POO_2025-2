@@ -7,4 +7,4 @@ class Calculos:
 
     @staticmethod
     def calcular_area(radio):
-        return math.pi*(radio ** 2)
+        return math.pi * (radio ** 2)
