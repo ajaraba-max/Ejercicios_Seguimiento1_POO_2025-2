@@ -1,23 +1,28 @@
-import math
-class Calculos:
+class Familia:
     @staticmethod
-    def Calcular_Longitud_Circunferencia(Radio):
-        "Calcula la longitud de una circunferencia dado su radio"
-        return 2 * math.pi * Radio
-    
+    def calcular_edades(edad_juan):
+        edad_alberto = int(edad_juan * (2/3))
+        edad_ana = int(edad_juan * (4/3))
+        edad_madre = edad_juan + edad_alberto + edad_ana
+        return edad_madre, edad_alberto, edad_ana, edad_juan
+
     @staticmethod
-    def Calcular_Area_Circulo(Radio):
-        "Calcula el area de un circulo dado su radio"
-        return math.pi * Radio ** 2
-    
-class Calculos:
-    
-    if __name__ == "__main__":
+    def mostrar_edades(edad_madre, edad_alberto, edad_ana, edad_juan):
+        print("\n   LAS EDADES SON:")
+        print(f"MADRE: {edad_madre}   ALBERTO: {edad_alberto}")
+        print(f"ANA: {edad_ana}     JUAN: {edad_juan}")
+
+
+class EjercicioN14:
+    @staticmethod
+    def ejecutar():
         try:
-            Radio = float(input("Ingrese el radio de la circunferencia: "))
-            Longitud = Calculos.Calcular_Longitud_Circunferencia(Radio)
-            Area = Calculos.Calcular_Area_Circulo(Radio)
-            print(f"La longitud de la circunferencia es: {Longitud:.2f}")
-            print(f"El area del circulo es: {Area:.2f}")
+            edad_juan = int(input("Juan, ¿Cuál es tu edad? "))
+            madre, alberto, ana, juan = Familia.calcular_edades(edad_juan)
+            Familia.mostrar_edades(madre, alberto, ana, juan)
         except ValueError:
-            print("Por favor, ingrese un valor numerico valido para el radio.")
+            print("Por favor, ingrese un número entero válido para la edad de Juan.")
+
+
+if __name__ == "__main__":
+    EjercicioN14.ejecutar()
