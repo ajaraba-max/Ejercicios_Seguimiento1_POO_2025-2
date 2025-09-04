@@ -4,7 +4,7 @@ class EjercicioN17:
     @staticmethod
     def ejecutar():
         try:
-            radio = float(input("Ingresa el radio del círculo: "))
+            radio = float(input("Ingresa el radio del círculo: ") )
             area, circunferencia = Circulo.calcular(radio)
 
             print(f"El Área del círculo es: {area:.2f}")
