@@ -1,4 +1,4 @@
-from calculos import Circulo
+from Calculos_N17 import Circulo
 
 class EjercicioN17:
     @staticmethod

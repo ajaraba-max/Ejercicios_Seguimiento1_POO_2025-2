@@ -1,4 +1,4 @@
-from calculos import Calculos
+from Calculos_N4 import Calculos
 
 class EjercicioN4:
     @staticmethod
