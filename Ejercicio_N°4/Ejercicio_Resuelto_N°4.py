@@ -4,14 +4,20 @@ class EjercicioN4:
     @staticmethod
     def ejecutar():
         try:
-            radio = float(input("Ingrese el radio de la circunferencia: "))
-            longitud = Calculos.calcular_longitud(radio)
-            area = Calculos.calcular_area(radio)
+            edad_juan = int(input("Ingrese la edad de Juan: "))
 
-            print(f"La longitud de la circunferencia es: {longitud:.2f}")
-            print(f"El área del círculo es: {area:.2f}")
+            edad_alberto = Calculos.calcular_alberto(edad_juan)
+            edad_ana = Calculos.calcular_ana(edad_juan)
+            edad_mama = Calculos.calcular_mama(edad_juan, edad_alberto, edad_ana)
+
+            print()
+            print(f"Edad de Juan: {edad_juan}")
+            print(f"Edad de Alberto: {edad_alberto}")
+            print(f"Edad de Ana: {edad_ana}")
+            print(f"Edad de Mamá: {edad_mama}")
+
         except ValueError:
-            print("Por favor, ingrese un valor numérico válido para el radio.")
+            print("Por favor, ingrese un número entero válido para la edad.")
 
 if __name__ == "__main__":
     EjercicioN4.ejecutar()

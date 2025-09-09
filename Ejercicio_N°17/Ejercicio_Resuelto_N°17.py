@@ -4,11 +4,11 @@ class EjercicioN17:
     @staticmethod
     def ejecutar():
         try:
-            radio = float(input("Ingresa el radio del círculo: "))
+            radio = float(input("\nIngresa el radio del círculo: "))
             area, circunferencia = Circulo.calcular(radio)
 
-            print(f"El Área del círculo es: {area:.2f}")
-            print(f"La Circunferencia es: {circunferencia:.2f}")
+            print(f"\nEl Área del círculo es: {area:.2f}")
+            print(f"La longitud de la circunferencia es: {circunferencia:.2f}\n")
         except ValueError:
             print("Por favor, ingrese un valor numérico válido para el radio.")
 
